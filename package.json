@@ -1,0 +1,15 @@
+{
+  "name": "mm-tdd-dojo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:leandrohstein/mm-tdd-dojo.git",
+  "author": "Leandro Henrique Stein <leandro.stein@madeiramadeira.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^2.0.5"
+  },
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run - coverage"
+  }
+}
