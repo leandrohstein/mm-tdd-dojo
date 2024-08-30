@@ -12,7 +12,7 @@ As seguintes regras são aplicadas a lista de números:
 
 ## Massa de dados para validação
 
-Abaixo uma lista de inputs e outputs com 20 anos, sendo 10 anos bissextos e 10 anos não bissextos:
+Abaixo uma lista de inputs e outputs com as listas e o resultado esperado:
 
 ```
 export const inputOutput = [
