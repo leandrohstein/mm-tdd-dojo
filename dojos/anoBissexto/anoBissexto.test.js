@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { isBissexto } from "./isBissexto";
+import { isBissexto } from "./anoBissexto";
 
 const inputOutput = {
     1800: false,
@@ -25,5 +25,5 @@ const inputOutput = {
 };
 
 test('valida funcão isBissexto', () => {
-    expect(isBissexto()).toBeTypeOf('function');
+    expect(isBissexto).toBeTypeOf('function');
 })
