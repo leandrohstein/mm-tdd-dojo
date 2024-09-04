@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { isBissexto } from "./anoBissexto";
+import { isBissexto, verifyRestDivisorIsFour } from "./anoBissexto";
 
 const inputOutput = {
     1800: false,
@@ -26,4 +26,9 @@ const inputOutput = {
 
 test('valida funcão isBissexto', () => {
     expect(isBissexto).toBeTypeOf('function');
+})
+
+test('verifica se o restante da divisao é 4', () => {
+    const input = 20;
+    expect(verifyRestDivisorIsFour(input)).toBe(true);
 })
