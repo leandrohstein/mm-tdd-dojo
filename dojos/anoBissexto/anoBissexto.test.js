@@ -28,26 +28,34 @@ test('valida funcão isBissexto', () => {
     expect(isBissexto).toBeTypeOf('function');
 })
 
-test('verifica se o restante da divisao é 4', () => {
+
+test('valida se funcão verifyRestDivisorIsFour é uma funcao', () => {
+    expect(verifyRestDivisorIsFour).toBeTypeOf('function');
+})
+test('valida se funcão verifyRestDivisorIsFour retorna boolean', () => {
+    expect(verifyRestDivisorIsFour(20)).toBeTypeOf("boolean");
+})
+
+test('verifica se o restante da divisao de 4 é zero', () => {
     const input = 20;
-    expect(verifyRestDivisorIsFour(input)).toBeTypeOf('boolean');
     expect(verifyRestDivisorIsFour(input)).toBe(true);
 })
 
-test('verifica se o restante da divisao nao é 4', () => {
+test('verifica se o restante da divisao por 4 nao é zero', () => {
     const input = 19;
-
-    expect(verifyRestDivisorIsFour(input)).toBeTypeOf('boolean');
     expect(verifyRestDivisorIsFour(input)).toBe(false);
 })
 
-test('verifica se o input é inteiro', () => {
+test('verifica se o input da funcao verifyRestDivisorIsFour é inteiro', () => {
     const input = '19';
-
-    expect(verifyRestDivisorIsFour(input)).toBeTypeOf('boolean');
     expect(verifyRestDivisorIsFour(input)).toBe(false);
 })
 
+
+test('verifica se o input da funcao verifyRestDivisorOfFourHundred é inteiro', () => {
+    const input = '19';
+    expect(verifyRestDivisorIsFour(input)).toBe(false);
+})
 
 
 
