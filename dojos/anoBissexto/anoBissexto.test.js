@@ -30,5 +30,26 @@ test('valida funcão isBissexto', () => {
 
 test('verifica se o restante da divisao é 4', () => {
     const input = 20;
+    expect(verifyRestDivisorIsFour(input)).toBeTypeOf('boolean');
     expect(verifyRestDivisorIsFour(input)).toBe(true);
 })
+
+test('verifica se o restante da divisao nao é 4', () => {
+    const input = 19;
+
+    expect(verifyRestDivisorIsFour(input)).toBeTypeOf('boolean');
+    expect(verifyRestDivisorIsFour(input)).toBe(false);
+})
+
+test('verifica se o input é inteiro', () => {
+    const input = '19';
+
+    expect(verifyRestDivisorIsFour(input)).toBeTypeOf('boolean');
+    expect(verifyRestDivisorIsFour(input)).toBe(false);
+})
+
+
+
+
+
+
